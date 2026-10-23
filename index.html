@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fff8fa" />
+    <meta
+      name="description"
+      content="Một bó hoa và tấm thiệp nhỏ, gửi những lời chúc dịu dàng với you."
+    />
+    <title>Một bó hoa dành tặng you</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./script.js" defer></script>
+    <script src="./card.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <canvas id="ambientPetalsCanvas" aria-hidden="true"></canvas>
+      <div class="gift-layout">
+        <section class="scene-column" aria-label="Hoa và những lời chúc 20/10">
+          <div class="gift-visuals">
+            <div class="bouquet-composition">
+              <div class="birthday-text">
+                <span>Happy Birthday</span>
+              </div>
+              <div
+                id="bouquetStageWrapper"
+                role="button"
+                tabindex="0"
+                aria-label="Bó hoa hồng. Nhấn Enter để nhận lời chúc; dùng phím mũi tên để chọn bông hoa."
+                aria-describedby="bouquetHint"
+              >
+                <canvas
+                  id="bouquetCanvas"
+                  aria-hidden="true"
+                  height="538"
+                ></canvas>
+              </div>
+              <button
+                class="envelope-button"
+                id="openCard"
+                type="button"
+                aria-haspopup="dialog"
+                aria-controls="greetingCard"
+                aria-expanded="false"
+                hidden
+              >
+                <span class="envelope" aria-hidden="true"
+                  ><span class="envelope-letter">Gửi bạn</span
+                  ><span class="envelope-seal">♡</span></span
+                >
+                <span class="envelope-caption">Có một tấm thiệp gửi you </span>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <dialog
+          id="greetingCard"
+          class="card-dialog"
+          aria-labelledby="cardTitle"
+        >
+          <div class="letter-paper">
+            <button
+              class="close-button"
+              id="closeCard"
+              type="button"
+              aria-label="Đóng thiệp"
+            >
+              ×
+            </button>
+          </div>
+        </dialog>
+      </div>
+    </main>
+    <audio id="bgMusic" loop preload="auto">
+      <source src="./assets/music.mp3" type="audio/mpeg" />
+    </audio>
+  </body>
+</html>

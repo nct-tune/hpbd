@@ -1,0 +1,17 @@
+{
+  "name": "flowers-20-10",
+  "version": "1.0.0",
+  "description": "Một bó hoa và tấm thiệp nhỏ dành tặng ngày 20/10",
+  "main": "index.html",
+  "scripts": {
+    "dev": "node server.cjs",
+    "start": "node server.cjs"
+  },
+  "keywords": [
+    "flowers",
+    "20-10",
+    "greeting-card"
+  ],
+  "author": "",
+  "license": "MIT"
+}
