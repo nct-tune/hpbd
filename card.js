@@ -194,9 +194,6 @@
       height: auto;
       object-fit: cover;
       object-position: center top;
-      image-rendering: -webkit-optimize-contrast;
-  image-rendering: crisp-edges;          
-  -ms-interpolation-mode: nearest-neighbor;
     }
     #envCard img[data-error] { display: none; }
 
@@ -287,7 +284,7 @@
       top: 50% !important;
       left: 50% !important;
       bottom: auto !important;
-      width: min(88vw, 500px) !important;
+      width: min(92vw, 129vh, 768px) !important;
       transform: translate(-50%, -50%) !important;
       z-index: 120 !important;
       clip-path: inset(0% 0 0 0 round 10px) !important;
